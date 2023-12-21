@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="/stylesheets/DetailProduct.css">
+</head>
+
+<div class="container">
+    <div class="row content">
+        <div class="col-5"><img class="product_img" src="{{ product.image }}" alt=""></div>
+        <div class="col-7">
+            <p class="product_name fs-3 fw-bolder text-primary">{{product.name}}</p>
+            <div>
+                <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-half text-warning"></i>
+                <i class="bi bi-star text-warning"></i><i class="bi bi-star text-warning"></i>
+            </div>
+            <p class="mb-0">{{product.type.name}}</p>
+            <p class="product_price fs-3 fw-bolder text-danger">{{ product.price }} VNĐ</p>
+            <p class="text-danger">Giảm 5% khi đăng nhập thành viên</p>
+            <div class="row1 d-block"><i class="bi bi-coin fs-4 ms-1 me-3"></i><span>Hàng chính hãng, chứng nhận an
+                    toàn</span></div>
+            <div class="row1 d-block"><i class="bi bi-rocket-takeoff fs-4 ms-1 me-3"></i><span>Miễn phí giao hàng toàn
+                    quốc đơn trên 500k</span></div>
+            <div class="row1 d-block"><i class="bi bi-telephone fs-4 ms-1 me-3"></i><span>Hàng chính hãng, chứng nhận an
+                    toàn</span></div>
+            <div class="number">
+                <button class="plus"><i class="bi bi-dash"></i></button>
+                <button class="value">100</button>
+                <button class="plus"><i class="bi bi-plus"></i></button>
+            </div>
+            <div class="row button">
+                <div class="col-5"><button class="btn_buy">Mua ngay</button></div>
+                <div class="col-5"><button class="btn_add">Thêm vào giỏ hàng</button></div>
+                <div class="col-2"><i class="bi bi-heart-half text-danger fs-3"></i></div>
+            </div>
+        </div>
+    </div>
+    <p class="fs-5 fw-bolder ms-4">Thông tin sản phẩm</p>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td class="col-5">Chủ đề</td>
+                <td class="col-7">Pokemon</td>
+            </tr>
+            <tr>
+                <td class="col-5">Chủ đề</td>
+                <td class="col-7">Pokemon</td>
+            </tr>
+            <tr>
+                <td class="col-5">Chủ đề</td>
+                <td class="col-7">Pokemon</td>
+            </tr>
+            <tr>
+                <td class="col-5">Chủ đề</td>
+                <td class="col-7">Pokemon</td>
+            </tr>
+            <tr>
+                <td class="col-5">Chủ đề</td>
+                <td class="col-7">Pokemon</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

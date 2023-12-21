@@ -1,0 +1,109 @@
+<div class="modal fade" id="createForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="">Add category here</h1>
+                <button type="button" id="close" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="cate_name" name="category" class="form-control mt-3" placeholder="Name"
+                    aria-describedby="basic-addon1">
+                <p class="mt-2 ms-2 " id="error"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btn_close" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" id="add_cate" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="table-data">
+    <div class="order">
+        <div class="head">
+            <h3>Recent Orders</h3>
+            <i class='bx bx-search'></i>
+            <i class='bx bx-filter'></i>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Date Order</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="/images/hitokage.png">
+                        <p>John Doe</p>
+                    </td>
+                    <td>01-10-2021</td>
+                    <td><span class="status completed">Completed</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/images/hitokage.png">
+                        <p>John Doe</p>
+                    </td>
+                    <td>01-10-2021</td>
+                    <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/images/hitokage.png">
+                        <p>John Doe</p>
+                    </td>
+                    <td>01-10-2021</td>
+                    <td><span class="status process">Process</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/images/hitokage.png">
+                        <p>John Doe</p>
+                    </td>
+                    <td>01-10-2021</td>
+                    <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/images/hitokage.png">
+                        <p>John Doe</p>
+                    </td>
+                    <td>01-10-2021</td>
+                    <td><span class="status completed">Completed</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="todo">
+        <div class="head">
+            <h3>Todos</h3>
+            <i class='bx bx-plus'></i>
+            <i class='bx bx-filter'></i>
+        </div>
+        <ul class="todo-list">
+            <li class="completed">
+                <p>Todo List</p>
+                <i class='bx bx-dots-vertical-rounded'></i>
+            </li>
+            <li class="completed">
+                <p>Todo List</p>
+                <i class='bx bx-dots-vertical-rounded'></i>
+            </li>
+            <li class="not-completed">
+                <p>Todo List</p>
+                <i class='bx bx-dots-vertical-rounded'></i>
+            </li>
+            <li class="completed">
+                <p>Todo List</p>
+                <i class='bx bx-dots-vertical-rounded'></i>
+            </li>
+            <li class="not-completed">
+                <p>Todo List</p>
+                <i class='bx bx-dots-vertical-rounded'></i>
+            </li>
+        </ul>
+    </div>
+</div>

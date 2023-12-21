@@ -1,0 +1,39 @@
+<div class="table-data">
+    <div class="order">
+        <div class="head">
+            <h3>Recent Categories</h3>
+            <a href="/admin/addCate" class="btn-download">
+                <i class="bi bi-plus-circle-fill"></i>
+                <span class="text">Add</span>
+            </a>
+            <i class='bx bx-search'></i>
+            <i class='bx bx-filter'></i>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th class="text-warning">Edit</th>
+                    <th class="text-danger">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each types }}
+                <tr class="">
+                    <td class="">{{name}}</td>
+                    <td>
+                        <a href="/admin/editCate/{{ _id }}" class="text-warning">
+                            <i class="bi bi-pen-fill ms-1"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/admin/deleteCate/{{ _id }}" class="text-danger" onclick="return confirm('Are you sure to delete {{ name }}?');">
+                            <i class="bi bi-trash3-fill ms-2"></i>
+                        </a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>

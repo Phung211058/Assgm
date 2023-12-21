@@ -1,0 +1,166 @@
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 20%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+main{
+    width: 94%;
+    position:absolute;
+    top: 20%;
+    left: 3%;
+    z-index: 0;
+}
+
+.navbar{
+    height: 60%;
+}
+.menu_items{
+    height: 32%;
+    background-color:rgb(82, 174, 204);
+}
+.logo{
+    margin:  0 0 0 15%;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+}
+.search_bar{
+    outline: none;
+    border-color: aqua;
+    box-shadow: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vh;
+    border-radius: 3px;
+}
+a{
+    text-decoration: none;
+}
+.item_list:hover{
+    background: linear-gradient(to right, #1d5ab0 0%, #05036d 100%); 
+    background-clip: text;
+    color: transparent;
+}
+.item_icon{
+    background: linear-gradient(to right, rgb(134, 134, 234) 0%, rgb(38, 38, 242) 100%); 
+    background-clip: text;
+    color: transparent;
+}
+.account_icon{
+    background: linear-gradient(to right, rgb(66, 37, 228) 0%, rgba(16, 3, 101, 0.863) 100%); 
+    background-clip: text;
+    color: transparent;
+}
+.menu_link{
+    background: linear-gradient(to right, chocolate 0%, #330867 100%); 
+    background-clip: text;
+    color: transparent;
+}
+.menu_icon{
+    background: linear-gradient(to right, chocolate 0%, #330867 100%); 
+    background-clip: text;
+    color: transparent;
+}
+.menu_link:hover{
+    background: linear-gradient(to right, #330867 0%, chocolate 100%); 
+    background-clip: text;
+    color: transparent;
+}
+.menu_icon:hover{
+    background: linear-gradient(to right, #330867 0%, chocolate 100%); 
+    background-clip: text;
+    color: transparent;
+}
+/* .menu_span{
+    background: linear-gradient(to right, chocolate 0%, #330867 100%); 
+    background-clip: text;
+    color: transparent;
+} */
+.search_btn{
+    width: 4vw;
+    height: 5.5vh;
+    outline: none;
+    border: none; 
+    border-radius: 3px; 
+    background-image: linear-gradient(aqua, dodgerblue);
+}
+.search_btn:hover{
+    background-image: linear-gradient(dodgerblue, deepskyblue);
+}
+.content{
+    background-color: rgba(243, 240, 240, 0.884);
+    border-radius: 5px;
+}
+.product_img{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 8px;
+    width: 75%;
+}
+.product_name{
+    margin-top: 3%;
+    margin-bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.product_price{
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+.row1{
+    border: 1px solid black;
+    width: 80%;
+}
+.number{
+    margin-top: 2%;
+}
+.plus{
+    border: none;
+    outline: none;
+    background-color: rgb(230, 229, 229);
+    border-radius: 5px;
+}
+.plus:hover{
+    background-color: lightgray;
+}
+.value{
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 5px;
+    width: 40px;
+}
+.button{
+    margin-top: 2%;
+    /* height: 10%; */
+}
+.btn_buy{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(244, 104, 104);
+    color: azure;
+    border-radius: 7px;
+}
+.btn_add{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(244, 104, 104);
+    color: azure;
+    border-radius: 7px;
+}
+.btn_add:hover{
+    background-color: rgb(167, 82, 82);
+}
+.btn_buy:hover{
+    background-color: rgb(167, 82, 82);
+}
+.table{
+    width: 70%;
+}

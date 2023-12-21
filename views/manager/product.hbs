@@ -1,0 +1,49 @@
+<div class="table-data">
+    <div class="order">
+        <div class="head">
+            <h3>Recent Products</h3>
+            <a href="/admin/addProduct" class="btn-download">
+                <i class="bi bi-plus-circle-fill"></i>
+                <span class="text">Add</span>
+            </a>
+            <i class='bx bx-search'></i>
+            <i class='bx bx-filter'></i>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Color</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Type</th>
+                    <th class="text-warning">Edit</th>
+                    <th class="text-danger">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each product }}
+                <tr class="">
+                    <td>
+                        <img src='{{ image }}'>
+                    </td>
+                    <td class="">{{name}}</td>
+                    <td class="">{{color}}</td>
+                    <td class="">{{price}}</td>
+                    <td class="">{{quantity}}</td>
+                    <td class="">{{category.name}}</td>
+                    <td>
+                        <a href="/admin/editProduct/{{ _id }}" class="text-warning">
+                            <i class="bi bi-pen-fill ms-1"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/admin/deleteProduct/{{ _id }}" class="text-danger"
+                            onclick="return confirm('Are you sure to delete {{ name }}?');">
+                            <i class="bi bi-trash3-fill ms-2"></i>
+                        </a>
+                    </td>
+                </tr>
+                {{/each}}
+    </div>

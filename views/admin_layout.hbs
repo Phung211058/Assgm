@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="/stylesheets/HomeAdmin.css">
+    </head>
+
+    <body>
+            <!-- place navbar here -->
+            <section id="sidebar">
+                <a href="#" class="brand">
+                    <i class="bi bi-emoji-smile-fill"></i>
+                    <span class="text">AdminHub</span>
+                </a>
+                <ul class="side_menu top">
+                    <li><a href="/admin/home">
+                        <i class="bi bi-amd"></i>
+                        <span class="text">Dashboard</span>
+                    </a></li>
+                    <li><a href="/admin/categories">
+                        <i class="bi bi-shop"></i>
+                        <span class="text">Categories</span>
+                    </a></li>
+                    <li><a href="/admin/products">
+                        <i class="bi bi-graph-up"></i>
+                        <span class="text">Products</span>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="bi bi-chat-right-dots-fill"></i>
+                        <span class="text">Message</span>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="bi bi-people-fill"></i>
+                        <span class="text">Team</span>
+                    </a></li>
+                </ul>
+
+                <ul class="side_menu">
+                    <li><a href="#">
+                        <i class="bi bi-gear-fill"></i>
+                        <span class="text">Setting</span>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="bi bi-person-check-fill"></i>
+                        <span class="text">Account</span>
+                    </a></li>
+                </ul>
+            </section>
+
+
+        <section id="content">
+            <nav>
+                <i class="bi bi-list"></i>
+                <a href="#" class="nav-link">Categories</a>
+                <form action="#">
+                    <div class="form-input">
+                        <input type="text" placeholder="Search">
+                        <button type="submit" class="search_btn">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <a href="#" class="notification">
+                    <i class="bi bi-bell-fill"></i>
+                    <span class="num">8</span>
+                </a>
+            </nav>
+            <main>
+                <div class="head-title">
+                    <div class="left">
+                        <h1>{{{title}}}</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><i class='bx bx-chevron-right' ></i></li>
+                            <li><a class="active" href="/">Home</a></li>
+                        </ul>
+                    </div>
+                    {{!-- <button type="button" class="btn-download" data-bs-toggle="modal" data-bs-target="#createForm">
+                        <i class="bi bi-plus-circle-fill"></i>
+                        <span class="text">Add</span>
+                    </button> --}}
+                    {{!-- <a href="/admin/add_category" class="btn-download">
+                        <i class="bi bi-plus-circle-fill"></i>
+                        <span class="text">Add</span>
+                    </a> --}}
+                </div>
+    
+                <ul class="box-info">
+                    <li>
+                       <i class="bi bi-bag-check-fill"></i>
+                        <span class="text">
+                            <h3>1020</h3>
+                            <p>New Order</p>
+                        </span>
+                    </li>
+                    <li>
+                        <i class="bi bi-eye-fill"></i>
+                        <span class="text">
+                            <h3>2834</h3>
+                            <p>Visitors</p>
+                        </span>
+                    </li>
+                    <li>
+                        <i class="bi bi-currency-dollar"></i>
+                        <span class="text">
+                            <h3>$2543</h3>
+                            <p>Total Sales</p>
+                        </span>
+                    </li>
+                </ul>
+    
+                {{{  body  }}}
+            </main>
+        </section>
+
+        <footer>
+            <!-- place footer here -->
+
+        </footer>
+
+        <script>
+            const allSideMenu = document.querySelectorAll('#sidebar .side_menu.top li a');
+            allSideMenu.forEach(item => {
+                const li = item.parentElement;
+
+                item.addEventListener('click', function(){
+                    allSideMenu.forEach(i => {
+                        i.parentElement.classList.remove('active');
+                    });
+                    li.classList.add('active');
+                    console.log(li.classList);
+                })
+            })
+
+            //  toggle sidebar
+            const menuBar = document.querySelector('nav .bi-list');
+            const sideBar = document.getElementById('sidebar');
+
+            menuBar.addEventListener('click', function(){
+                sideBar.classList.toggle('hide');
+                console.log(sideBar.classList);
+            })
+
+        </script>
+
+
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" 
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+       
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="admin_CRUD.js"></script>
+
+        
+    </body>
+</html>

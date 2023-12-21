@@ -1,0 +1,12 @@
+    <div class="container">
+      <div class="row">
+        {{#each result }}
+        <div class="col-3 cover">
+          <a href="/detail/{{ _id }}" class="link-offset-2 link-underline link-underline-opacity-0 ">
+            <div class="d-flex justify-content-center align-items-center   "><img src="{{ image }}"
+                class="object-fit-sm-contain align-middle product_img" alt=""></div>
+            <p class="text-dark text-center">{{name}}</p>
+          </a>
+          <p class="text-danger fw-bolder text-end">{{ price }} ₫</p>
+        </div>
+        {{/each}}
