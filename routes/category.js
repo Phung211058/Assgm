@@ -4,17 +4,16 @@ const CategoryModel = require('../models/CategoryModel');
 const router = express.Router();
 
 router.get("/categories", async(req, res, next) => {
-    var types = await CategoryModel.find({});
-    res.render('manager/category', {layout: 'admin_layout', types: types, title: 'Categories'});
-  })
+  var types = await CategoryModel.find({});
+  res.render('manager/category', {layout: 'admin_layout', types: types, title: 'Categories'});
+})
 //--------------ADD CATEGORY-------------------------
 router.post("/addCate", async(req, res) =>{
-    // var category = new CategoryModel();
-    var type = new CategoryModel();
-    type.name = req.body.category_name;
-    await type.save();
-    res.redirect("/admin/categories");
-  })
+  var type = new CategoryModel();
+  type.name = req.body.category_name;
+  await type.save();
+  res.redirect("/admin/categories");
+})
   
   router.get("/addCate", (req, res, next) => {
     res.render('manager/add_cate', {layout: 'empty_layout'});

@@ -20,6 +20,8 @@ router.get("/products", async(req, res, next) => {
     product.name = req.body.product_name;
     product.color = req.body.product_color;
     product.price = req.body.product_price;
+    product.date = req.body.product_date;
+    // product.colo = req.body.gender;
     product.quantity = req.body.product_quantity;
     product.category = req.body.product_type;
     await product.save();

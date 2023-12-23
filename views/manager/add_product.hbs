@@ -31,10 +31,26 @@
                     <input type="text" placeholder="Name" name="product_name" required />
                 </label>
                 <label>
-                    <input type="text" placeholder="Color" name="product_color" required />
+                    {{!-- <input type="text" placeholder="Color" name="product_color" required /> --}}
+                    <select name="product_color" placeholder="Color" id="">
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                    </select>
                 </label>
+                {{!-- <label> --}}
+                    {{!-- <input type="radio" class="ms-2 gender_radio" name="gender" value="red" class="gender" checked> Red --}}
+                    {{!-- <span for="surname" class="gender_lb">Red</span> --}}
+                    {{!-- <input type="radio" class="ms-2 gender_radio" name="gender" value="green" class="gender"> Green --}}
+                    {{!-- <span for="surname" class="">Green</span> --}}
+                    {{!-- <input type="radio" class="ms-2 gender_radio" name="gender" value="yellow" class="gender">Yellow --}}
+                    {{!-- <span for="surname" class="">Yellow</span> --}}
+                {{!-- </label> --}}
                 <label>
                     <input type="number" placeholder="Price" name="product_price" required />
+                </label>
+                <label>
+                    <input type="date" placeholder="Price" name="product_date" required />
                 </label>
                 <label>
                     <input type="number" placeholder="Quantity" name="product_quantity" required />

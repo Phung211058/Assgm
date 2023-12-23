@@ -6,6 +6,8 @@ var ProductSchema = mongoose.Schema({
     color: String,
     price: String,
     quantity: String,
+    colo: String,
+    date: String,
     category: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'categories'  // 'brands': collection

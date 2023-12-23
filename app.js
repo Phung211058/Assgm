@@ -9,6 +9,9 @@ var adminRouter = require('./routes/admin');
 var categoryRouter = require('./routes/category');
 var productRouter = require('./routes/product');
 
+var hbs = require('hbs');
+hbs.registerHelper('dateFormat', require('handlebars-dateformat')); 
+
 var app = express();
 
 var mongoose = require('mongoose');
@@ -32,9 +35,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use('/', indexRouter);
 app.use('/', customerRouter);
-// app.use('/users', usersRouter);
 app.use('/admin', adminRouter);
 app.use('/admin', categoryRouter);
 app.use('/admin', productRouter);
